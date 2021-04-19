@@ -4,11 +4,11 @@ this project is the first example for springwebflux, there is a server and clien
 
 ## Content
 this projects was created with 
-* java 8
-* SpringWebflux
-  *Mono 
-  *Flux
-  *Flux<ServerSentEvent<?>>
+1. java 8
+2. SpringWebflux
+	* Mono
+	* Flux
+	* Flux<ServerSentEvent<?>>
 
 
 ## Demo
