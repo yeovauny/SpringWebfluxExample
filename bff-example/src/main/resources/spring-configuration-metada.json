@@ -1,0 +1,45 @@
+{
+  "groups": [
+    {
+      "name": "security.resource",
+      "type": "com.example.bff.example.bff.example.chasis.testing.HttpSecurityProperties",
+      "sourceType": "com.example.bff.example.bff.example.chasis.testing.HttpSecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "security.resource.enabled",
+      "type": "java.lang.Boolean",
+      "description": "This flag can be used to completely disable security in the entire app, such that all resources are allowed access without token.",
+      "sourceType": "com.example.bff.example.bff.example.chasis.testing.HttpSecurityProperties",
+      "defaultValue": true
+    },
+    {
+      "name": "security.resource.introspection-uri",
+      "type": "java.lang.String",
+      "description": "The endpoint used to introspect opaque access tokens to build client profile. This endpoint will be appended to the {@link #uri}.",
+      "sourceType": "com.example.bff.example.bff.example.chasis.testing.HttpSecurityProperties",
+      "defaultValue": "tokeninfo"
+    },
+    {
+      "name": "security.resource.jwk-set-uri",
+      "type": "java.lang.String",
+      "description": "The endpoint for retrieving the JWKS from OAuth2 Server.",
+      "sourceType": "com.example.bff.example.bff.example.chasis.testing.HttpSecurityProperties",
+      "defaultValue": "certs"
+    },
+    {
+      "name": "security.resource.provider",
+      "type": "com.example.bff.example.bff.example.chasis.testing.model.SecurityProviderEnum",
+      "description": "Security provider which protects this resource.",
+      "sourceType": "com.example.bff.example.bff.example.chasis.testing.HttpSecurityProperties"
+    },
+    {
+      "name": "security.resource.uri",
+      "type": "java.lang.String",
+      "description": "The base uri of the oauth2 service.",
+      "sourceType": "com.bns.chassis.starter.security.model.HttpSecurityProperties"
+    }
+  ],
+  "hints": []
+}
